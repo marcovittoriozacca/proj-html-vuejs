@@ -74,6 +74,25 @@ export const store = reactive({
             date: 'Jan 21, 2022',
             location: 'Cambridge. MA 02138, USA',
         },
+    ],
+
+    stats:[
+        {
+            name: 'Mentorship',
+            number: 78,
+        },
+        {
+            name: 'Education',
+            number: 95,
+        },
+        {
+            name: 'Learning',
+            number: 65,
+        },
+        {
+            name: 'Motivation',
+            number: 83,
+        },
     ]
 
 })

@@ -4,6 +4,7 @@ import {store} from '../../store'
 import OurSpecialties from './mainElements/OurSpecialties.vue'
 import OurStaff from './mainElements/OurStaff.vue'
 import UpcomingEvents from './mainElements/UpcomingEvents.vue'
+import StatsComp from './mainElements/StatsComp.vue'
 
 export default{
     name: 'AppMain',
@@ -12,6 +13,7 @@ export default{
         OurSpecialties,
         OurStaff,
         UpcomingEvents,
+        StatsComp,
     },
 
     data() {
@@ -36,6 +38,10 @@ export default{
 
             <UpcomingEvents
                 :events="store.events"
+            />
+
+            <StatsComp
+                :stats="store.stats"
             />
         
     </main>

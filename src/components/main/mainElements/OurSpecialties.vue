@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
+@use '../../../assets/sass/partials/mixins' as *;
 
 
 
@@ -42,17 +43,11 @@ h2{
     }
 }
 .specialties-header{
-    position: relative;
+    @include orange-border;
     &::before{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
         transform: translateX(-50%);
-        height: 3px;
-        width: 8%;
-        background-color: $orange;
     }
+    
     h2{
         font-size: 2.5rem;
     }

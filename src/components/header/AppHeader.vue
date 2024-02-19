@@ -35,7 +35,7 @@ export default {
                 },
                 {
                     name: 'events',
-                    url: '#',
+                    url: '#events',
                     active: false,
                 },
                 {

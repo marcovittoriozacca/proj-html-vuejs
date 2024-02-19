@@ -96,6 +96,7 @@
 
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
+@use '../../../assets/sass/partials/mixins' as *;
   #staff{
     margin-top: 30px;
     padding-top: 100px;
@@ -134,15 +135,7 @@
         margin-left: -100px;
     }
     .custom-border{
-        position: relative;
-        &::before{
-            position: absolute;
-            content: '';
-            bottom: 0;
-            height: 2px;
-            width: 10%;
-            background-color: $orange;
-        }
+        @include orange-border;
     }
 </style>
   
