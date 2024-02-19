@@ -19,7 +19,7 @@ export default{
 <template>
     <section id="cta">
         
-        <carousel :items-to-show="1" :itemsToScroll="1" :autoplay="10000" :wrap-around="true" class="carousel">
+        <carousel :items-to-show="1" :itemsToScroll="1" :autoplay="8000" :wrap-around="true" class="carousel">
             
             <slide v-for="slide in ctaImages" :key="slide" class="custom-heigth">
                 <figure class="m-0">
@@ -58,7 +58,6 @@ export default{
                         <a href="#" class="px-4 py-3 text-decoration-none text-uppercase btn-orange text-white">
                             <span>purchase</span>
                             <i class="fas fa-arrow-right-long"></i>
-    
                         </a>
                     </div>
                     

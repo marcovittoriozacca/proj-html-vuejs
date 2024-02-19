@@ -8,7 +8,7 @@ export default{
 
 <template>
     
-    <nav class="d-flex align-items-center justify-content-between container container-lg py-4 position-absolute">
+    <nav class="d-flex align-items-center justify-content-between px-5 container-fluid py-4 position-absolute">
         <figure>
             <img src="/img/logo-img-01.png" alt="logo-img-1" width="120">
         </figure>

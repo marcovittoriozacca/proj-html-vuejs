@@ -44,7 +44,7 @@ export default {
                     active: false,
                 },
             ],
-            ctaElements: ['rev-slider-main-home-img-03.jpg', 'rev-slider-main-home-img-02.png']
+            ctaElements: ['h1-rev-img-01.jpg','rev-slider-main-home-img-02.png','rev-slider-main-home-img-03.jpg']
         }
     },
     

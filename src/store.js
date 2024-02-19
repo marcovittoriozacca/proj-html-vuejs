@@ -26,6 +26,30 @@ export const store = reactive({
         },
     ],
 
-
+    ourStaff:[
+        {
+            image: 'h1-img-01.jpg',
+            name: 'Emily Johnson',
+            role: 'Chief Technology Officer',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quaerat sunt reiciendis dignissimos amet minus voluptates debitis eveniet voluptatibus ex?',
+            signature: '',
+        },
+        
+        {
+            image: 'h1-img-02.jpg',
+            name: 'Sophia Williams',
+            role: 'Chief Financial Officer',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quaerat sunt reiciendis dignissimos amet minus voluptates debitis eveniet voluptatibus ex?',
+            signature: '',
+        },
+        {
+            image: 'h1-img-03.jpg',
+            name: 'Jason Bickford',
+            role: 'Founder and Executive Director',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quaerat sunt reiciendis dignissimos amet minus voluptates debitis eveniet voluptatibus ex?',
+            signature: '',
+        },
+        
+    ],
 
 })

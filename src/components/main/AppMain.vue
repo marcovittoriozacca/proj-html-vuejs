@@ -2,12 +2,14 @@
 import {store} from '../../store'
 
 import OurSpecialties from './mainElements/OurSpecialties.vue'
+import OurStaff from './mainElements/OurStaff.vue'
 
 export default{
     name: 'AppMain',
 
     components:{
         OurSpecialties,
+        OurStaff,
     },
 
     data() {
@@ -20,9 +22,16 @@ export default{
 
 <template>
     <main>
-        <OurSpecialties
-            :elements="store.specialties"
-        />
+        <div class="container-fluid px-5">
+            <OurSpecialties
+                :elements="store.specialties"
+            />
+        </div>
+        
+            <OurStaff
+                :staff="store.ourStaff"
+            />
+        
     </main>
 
 </template>
