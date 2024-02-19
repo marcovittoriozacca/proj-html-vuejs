@@ -93,6 +93,56 @@ export const store = reactive({
             name: 'Motivation',
             number: 83,
         },
+    ],
+    latestNews: [
+        {
+            image: 'h1-blog-img-01.jpg',
+            date: 'May 5, 2019',
+            author: 'Amanda Doe',
+            title: 'Next Investment',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
+            url: '#'
+        },
+        {
+            image: 'h1-blog-img-02.jpg',
+            date: 'May 5, 2019',
+            author: 'Amanda Doe',
+            title: 'Team Building',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
+            url: '#'
+        },
+        {
+            image: 'h1-blog-img-03.jpg',
+            date: 'May 5, 2019',
+            author: 'Amanda Doe',
+            title: 'New Business Day',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
+            url: '#'
+        },
+        {
+            image: 'h1-blog-img-04.jpg',
+            date: 'May 5, 2019',
+            author: 'Amanda Doe',
+            title: 'Strategic Planning Session',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
+            url: '#'
+        },
+        {
+            image: 'h1-img-07.jpg',
+            date: 'May 5, 2019',
+            author: 'Amanda Doe',
+            title: 'Innovation Workshop',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
+            url: '#'
+        },
+        {
+            image: 'h1-img-08.jpg',
+            date: 'May 5, 2019',
+            author: 'Amanda Doe',
+            title: 'Growth Strategy Retreat',
+            description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
+            url: '#'
+        },
     ]
 
 })

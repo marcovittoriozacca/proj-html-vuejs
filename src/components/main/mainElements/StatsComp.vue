@@ -7,27 +7,29 @@ export default{
 
 <template>
     
-    <section id="stats" class="container container-lg custom-padding">
-
-        <div class="row">
-            <div class="col-6">
-                <h2 class="py-2">Creative Leader</h2>
-                <p class="text-secondary py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, id deleniti unde, alias totam explicabo repellendus velit quidem odit veritatis, cumque ratione. Quasi nisi sed itaque ipsum libero, voluptatibus ullam?</p>
-                <a class="text-uppercase text-decoration-none fw-bold" href="#">read more</a>
-            </div>
-            <div class="col-6">
-                <div v-for="(stat, index) in stats" :key="index" class="py-2">
-                    <div class="d-flex justify-content-between pb-1">
-                        {{ stat.name }}
-                        <span>{{ stat.number }}%</span>
-                    </div>
-                        <div class="outer-bar">
-                            <div :style="{ 'width' : stat.number + '%' }" class="inner-bar"></div>
-                        </div>
+    <section id="stats" class="bg-white custom-padding">
+        <div class="container container-lg">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="py-2">Creative Leader</h2>
+                    <p class="text-secondary py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, id deleniti unde, alias totam explicabo repellendus velit quidem odit veritatis, cumque ratione. Quasi nisi sed itaque ipsum libero, voluptatibus ullam?</p>
+                    <a class="text-uppercase text-decoration-none fw-bold" href="#">read more</a>
                 </div>
-
+                <div class="col-6">
+                    <div v-for="(stat, index) in stats" :key="index" class="py-2">
+                        <div class="d-flex justify-content-between pb-1">
+                            {{ stat.name }}
+                            <span>{{ stat.number }}%</span>
+                        </div>
+                            <div class="outer-bar">
+                                <div :style="{ 'width' : stat.number + '%' }" class="inner-bar"></div>
+                            </div>
+                    </div>
+    
+                </div>
             </div>
         </div>
+
 
     </section>
 
@@ -50,7 +52,7 @@ export default{
         }
     }
     .custom-padding{
-        padding-block: 80px;
+        padding-block: 80px 130px;
     }
 
 </style>

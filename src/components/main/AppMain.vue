@@ -5,6 +5,7 @@ import OurSpecialties from './mainElements/OurSpecialties.vue'
 import OurStaff from './mainElements/OurStaff.vue'
 import UpcomingEvents from './mainElements/UpcomingEvents.vue'
 import StatsComp from './mainElements/StatsComp.vue'
+import LatestNews from './mainElements/LatestNews.vue'
 
 export default{
     name: 'AppMain',
@@ -14,6 +15,7 @@ export default{
         OurStaff,
         UpcomingEvents,
         StatsComp,
+        LatestNews,
     },
 
     data() {
@@ -43,6 +45,10 @@ export default{
             <StatsComp
                 :stats="store.stats"
             />
+
+            <LatestNews
+                :latest-news="store.latestNews"
+            />
         
     </main>
 
@@ -55,3 +61,4 @@ export default{
         margin-top: -80px;
     }
 </style>
+

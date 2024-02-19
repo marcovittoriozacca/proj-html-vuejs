@@ -49,7 +49,7 @@
         <div class="d-flex align-items-center container container-lg">
             <div class="position-relative">
 
-                <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" wrapAround="true" class="carousel-size">
+                <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true" class="carousel-size">
                   <Slide v-for="slide in staff" :key="slide">
                     <div class="carousel__item">
                         <figure class="m-0">
