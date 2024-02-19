@@ -3,3 +3,12 @@
 a{
     color: black;
 }
+body{
+    background-color: #F9F9F9;
+}
+html{
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+}

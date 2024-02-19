@@ -67,5 +67,7 @@ export default {
 
 
 <style lang="scss" scoped>
-
+    header{
+        z-index: 1;
+    }
 </style>

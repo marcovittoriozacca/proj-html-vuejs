@@ -19,10 +19,7 @@ export default{
 <template>
     <section id="cta">
         
-        <carousel :items-to-show="1" :itemsToScroll="1" :autoplay="10000" :wrap-around="true"
-        :i18n="{
-            'iconArrowLeft': 'iconaLel'
-        }">
+        <carousel :items-to-show="1" :itemsToScroll="1" :autoplay="10000" :wrap-around="true" class="carousel">
             
             <slide v-for="slide in ctaImages" :key="slide" class="custom-heigth">
                 <figure class="m-0">
@@ -30,7 +27,7 @@ export default{
                 </figure>
             </slide>
 
-            <template #addons class="position-relative">
+            <template #addons class="position-relative z-2">
 
                 <!-- arrows -->
                 <navigation>
@@ -49,7 +46,7 @@ export default{
                 </navigation>
 
                 <!-- our team element -->
-                <div id="our-team" class="d-flex flex-column align-items-start">
+                <div id="our-team" class="d-flex flex-column align-items-start z-3">
                     <h1>Our Team<span>.</span></h1>
                     <p class="py-3 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat amet, cum iusto eius nam eaque voluptatum</p>
                     <div>
@@ -76,8 +73,11 @@ export default{
 
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
+
 .custom-heigth{
     height: 700px;
+
+    
 }
     #our-team{
         position: absolute;
