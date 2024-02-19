@@ -3,6 +3,7 @@ import {store} from '../../store'
 
 import OurSpecialties from './mainElements/OurSpecialties.vue'
 import OurStaff from './mainElements/OurStaff.vue'
+import UpcomingEvents from './mainElements/UpcomingEvents.vue'
 
 export default{
     name: 'AppMain',
@@ -10,6 +11,7 @@ export default{
     components:{
         OurSpecialties,
         OurStaff,
+        UpcomingEvents,
     },
 
     data() {
@@ -30,6 +32,10 @@ export default{
         
             <OurStaff
                 :staff="store.ourStaff"
+            />
+
+            <UpcomingEvents
+                :events="store.events"
             />
         
     </main>

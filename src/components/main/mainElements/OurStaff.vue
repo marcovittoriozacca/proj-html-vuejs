@@ -45,9 +45,10 @@
 </script>
 
 <template>
-    <section id="staff" class="container-fluid">
+    <section id="staff" class="container-fluid mb-5">
         <div class="d-flex align-items-center container container-lg">
             <div class="position-relative">
+
                 <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" wrapAround="true" class="carousel-size">
                   <Slide v-for="slide in staff" :key="slide">
                     <div class="carousel__item">
@@ -68,12 +69,14 @@
                     </button>
                 </div>
             </div>
-            <div>
+
+            <div class="d-flex">
                 <div class="p-5 bg-white staff-info">
-                    <h3>{{ staff[currentSlide].name }}</h3>
-                    <h5 class="text-secondary">{{ staff[currentSlide].role }}</h5>
-                    <hr>
-                    <p class="text-secondary">{{ staff[currentSlide].description }}</p>
+                    <div class="pb-2 custom-border">
+                        <h3>{{ staff[currentSlide].name }}</h3>
+                        <h5 class="text-secondary">{{ staff[currentSlide].role }}</h5>
+                    </div>
+                    <p class="text-secondary pt-3">{{ staff[currentSlide].description }}</p>
                     <ul class="list-unstyled socials d-flex column-gap-3">
                         <li v-for="(social, index) in socials" :key="index">
                             <a :href="social.url" class="text-white rounded-circle p-1 px-3 d-flex justify-content-center align-items-center text-decoration-none ">
@@ -115,6 +118,7 @@
     }
     h5{
         font-weight: 300;
+        font-size: .9rem;
     }
     .socials{
         li{
@@ -128,6 +132,17 @@
     .staff-info{
         position: relative;
         margin-left: -100px;
+    }
+    .custom-border{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: 0;
+            height: 2px;
+            width: 10%;
+            background-color: $orange;
+        }
     }
 </style>
   

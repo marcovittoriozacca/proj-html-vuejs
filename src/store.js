@@ -52,4 +52,28 @@ export const store = reactive({
         
     ],
 
+    events:[
+        {
+            name: 'Melbourne Coaching',
+            timeFrom: '9:00 am',
+            timeTo: ' 5:00 pm',
+            date: 'Jan 7, 2022',
+            location: 'Cambridge. MA 02138, USA',
+        },
+        {
+            name: 'New York Coaching',
+            timeFrom: '9:00 am',
+            timeTo: ' 5:00 pm',
+            date: 'Jan 11, 2022',
+            location: 'Cambridge. MA 02138, USA',
+        },
+        {
+            name: 'London Coaching',
+            timeFrom: '9:00 am',
+            timeTo: ' 5:00 pm',
+            date: 'Jan 21, 2022',
+            location: 'Cambridge. MA 02138, USA',
+        },
+    ]
+
 })
