@@ -139,6 +139,7 @@ export default {
         margin-block: 150px 220px;
     }
     .partner-logo{
+        margin-top: 150px;
         figure{
             position: relative;
             img{
