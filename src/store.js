@@ -143,6 +143,24 @@ export const store = reactive({
             description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam, est molestias officiis vero officia',
             url: '#'
         },
+    ],
+
+    testimonials:[
+        {
+            name: 'cynthia clark',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo expedita doloremque officiis, illum consequuntur voluptatum atque possimus!',
+            image: 'h3-img-04.png'
+        },
+        {
+            name: 'sophia campbell',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo expedita doloremque officiis, illum consequuntur voluptatum atque possimus!',
+            image: 'h3-img-07.png'
+        },
+        {
+            name: 'ethan johnson',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo expedita doloremque officiis, illum consequuntur voluptatum atque possimus!',
+            image: 'h3-img-08.png'
+        },
     ]
 
 })

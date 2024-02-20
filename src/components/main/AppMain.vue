@@ -6,6 +6,7 @@ import OurStaff from './mainElements/OurStaff.vue'
 import UpcomingEvents from './mainElements/UpcomingEvents.vue'
 import StatsComp from './mainElements/StatsComp.vue'
 import LatestNews from './mainElements/LatestNews.vue'
+import TestimonialsComp from './mainElements/TestimonialsComp.vue'
 
 export default{
     name: 'AppMain',
@@ -16,6 +17,7 @@ export default{
         UpcomingEvents,
         StatsComp,
         LatestNews,
+        TestimonialsComp,
     },
 
     data() {
@@ -48,6 +50,10 @@ export default{
 
             <LatestNews
                 :latest-news="store.latestNews"
+            />
+
+            <TestimonialsComp
+                :testimonials="store.testimonials"
             />
         
     </main>
