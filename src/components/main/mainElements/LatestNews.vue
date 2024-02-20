@@ -28,7 +28,7 @@ export default{
 
 <template>
 
-    <section id="latest-news" class="py-5 position-relative mb-5">
+    <div class="py-5 position-relative mb-5">
         <img src="/img/svg-4.svg" alt="" class="position-absolute bg-circle">
         
         <div class="text-center py-4 mb-4 section-header">
@@ -78,7 +78,7 @@ export default{
             </Carousel>
         </div>
         
-    </section>
+    </div>
 
 </template>
 

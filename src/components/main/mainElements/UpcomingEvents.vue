@@ -36,7 +36,7 @@ export default{
 
 <template>
 
-    <section id="events">
+    <div class="events">
 
         <div class="container container-lg custom-padding">
             <div class="bg-white events-card">
@@ -68,14 +68,14 @@ export default{
             </div>
         </div>
 
-    </section>
+    </div>
 
 </template>
 
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
     
-    #events{
+    .events{
         background-image: url('/img/h1-img-09.jpg');
         background-repeat: no-repeat;
         background-size: cover;

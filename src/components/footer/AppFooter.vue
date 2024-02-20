@@ -1,10 +1,12 @@
 <script>
 import FooterLinks from './footerElements/FooterLinks.vue'
+import ArrowUpBtn from '../generalComponents/ArrowUpBtn.vue'
 export default{
     name: 'AppFooter',
 
     components:{
         FooterLinks,
+        ArrowUpBtn,
     },
 
     data() {
@@ -88,7 +90,7 @@ export default{
 
 <template>
 
-    <footer>
+    <footer class="position-relative">
         <FooterLinks
             :about="about"
             :twitter="twitter"
@@ -98,6 +100,9 @@ export default{
         <div class="orange-bar py-1 text-center">
             <span>Copyright Everlead&copy;MikadoThemes</span>
         </div>
+        <div class="position-absolute arrow">
+            <ArrowUpBtn/>
+        </div>
     </footer>
 
 </template>
@@ -105,6 +110,7 @@ export default{
 <style lang="scss" scoped>
 @use '../../assets/sass/partials/variables' as *;
     footer{
+        
         background-color: #171515ff;
         .orange-bar{
             background-color: $orange;
@@ -112,6 +118,10 @@ export default{
                 font-weight: 100;
                 font-size: .9rem;
             }
+        }
+        .arrow{
+            bottom: 18px;
+            right: 20px;
         }
     }
     

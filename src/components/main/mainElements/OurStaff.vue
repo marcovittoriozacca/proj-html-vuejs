@@ -45,7 +45,7 @@
 </script>
 
 <template>
-    <section id="staff" class="container-fluid mb-5">
+    <div class="container-fluid mb-5 staff">
         <div class="d-flex align-items-center container container-lg">
             <div class="position-relative">
 
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-    </section>
+    </div>
 
   </template>
 
@@ -97,7 +97,7 @@
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
 @use '../../../assets/sass/partials/mixins' as *;
-  #staff{
+  .staff{
     margin-top: 30px;
     padding-top: 100px;
     background-image: url('/img/svg-4.svg');

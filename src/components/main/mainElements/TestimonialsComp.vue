@@ -30,7 +30,7 @@ export default{
 
 <template>
 
-    <section id="testimonials">
+    <div class="testimonials">
 
         <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true">
             <Slide v-for="testimonial in testimonials" :key="testimonial" class="text-white">
@@ -71,12 +71,12 @@ export default{
                 </Navigation>
             </template>
         </Carousel>
-    </section>
+    </div>
 
 </template>
 
 <style lang="scss" scoped>
-    section{
+    .testimonials{
         background-color: #1f1c1cff;
         i{
             color: white;

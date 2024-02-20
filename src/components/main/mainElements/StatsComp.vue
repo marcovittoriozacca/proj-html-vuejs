@@ -7,7 +7,7 @@ export default{
 
 <template>
     
-    <section id="stats" class="bg-white custom-padding">
+    <div class="bg-white custom-padding">
         <div class="container container-lg">
             <div class="row">
                 <div class="col-6">
@@ -31,7 +31,7 @@ export default{
         </div>
 
 
-    </section>
+    </div>
 
 </template>
 

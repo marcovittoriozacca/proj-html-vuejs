@@ -7,7 +7,7 @@ export default {
 
 <template>
     
-    <section id="specialties">
+    <div class="specialties">
         <div class="text-center bg-white py-5 mb-2">
             <div class="specialties-header pt-5 pb-2 mb-5">
                 <h2>
@@ -27,7 +27,7 @@ export default {
             </div>
         </div>
 
-    </section>
+    </div>
 
 </template>
 

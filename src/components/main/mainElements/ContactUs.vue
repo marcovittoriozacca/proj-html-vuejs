@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-    <section id="contact-us" class="custom-margin">
+    <div class="custom-margin custom-bg">
 
         <div class="container container-lg">
             <div class="row">
@@ -68,13 +68,16 @@ export default {
             </div>
         </div>
 
-    </section>
+    </div>
 
 </template>
 
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/mixins' as *;
 @use '../../../assets/sass/partials/variables' as *;
+.custom-bg{
+    background-color: #fafafaff;
+}
     .map{
         background-image: url('/img/h1-contact-rev-01.png');
         height: 100%;
