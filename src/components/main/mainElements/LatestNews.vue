@@ -65,13 +65,13 @@ export default{
     
                 <template #addons class="position-relative">
                     
-                    <button id="prevNews" @click="prev">
-                        <i class="fa fa-arrow-left-long"></i>
-                    </button>
+                    
+                        <i @click="prev" class="fa fa-arrow-left-long arrow"></i>
+                    
             
-                    <button id="nextNews" @click="next">
-                        <i class="fa fa-arrow-right-long"></i>
-                    </button>
+                    
+                        <i @click="next" class="fa fa-arrow-right-long arrow"></i>
+                    
     
                 </template>
     
@@ -107,7 +107,7 @@ export default{
     }
 
     .icons{
-        font-size: .9rem;
+        font-size: 1rem;
         i{
             color: $orange;
         }
@@ -120,10 +120,12 @@ export default{
         font-weight: 300;
     }
     
-    button{
+    .arrow{
         position: absolute;
         top: 50%;
         transform: translateY(-100%);
+        cursor: pointer;
+        font-size: 2rem;
         &:first-of-type{
             left: -50px;
         }
@@ -139,5 +141,8 @@ export default{
         }
     }
 
-    
+    .my-max-w{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 </style>

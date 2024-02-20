@@ -40,7 +40,7 @@ export default{
             <span v-else>{{ testimonials.length }}</span>
         </div>
 
-        <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true" :autoplay="5000" :transition="500" :pauseAutoplayOnHover="true" class="position-relative z-2">
+        <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true" :autoplay="5000" :transition="500" :pauseAutoplayOnHover="true" class="position-relative z-2 my-max-w">
             <Slide v-for="testimonial in testimonials" :key="testimonial" class="text-white">
                 <div class="d-flex flex-column testimonial-info row-gap-4">
                     <figure class="m-0">
@@ -132,10 +132,9 @@ export default{
             }
     }
 
-    .carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
+.my-max-w{
+    max-width: 1400px;
+    margin: 0 auto;
 }
 </style>
 
