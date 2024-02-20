@@ -161,6 +161,29 @@ export const store = reactive({
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quo expedita doloremque officiis, illum consequuntur voluptatum atque possimus!',
             image: 'h3-img-08.png'
         },
+    ],
+
+    contactUsLogos: [
+        {
+            blackLogo: 'h4-clients-img-03.png',
+            orangeLogo: 'h4-clients-img-04-1.png'
+        },
+        {
+            blackLogo: 'h4-clients-img-05.png',
+            orangeLogo: 'h4-clients-img-06-1.png'
+        },
+        {
+            blackLogo: 'h4-clients-img-07.png',
+            orangeLogo: 'h4-clients-img-08-1.png'
+        },
+        {
+            blackLogo: 'h4-clients-img-09.png',
+            orangeLogo: 'h4-clients-img-10-1.png'
+        },
+        {
+            blackLogo: 'h4-clients-img-01.png',
+            orangeLogo: 'h4-clients-img-02.png'
+        },
     ]
 
 })

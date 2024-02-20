@@ -7,6 +7,7 @@ import UpcomingEvents from './mainElements/UpcomingEvents.vue'
 import StatsComp from './mainElements/StatsComp.vue'
 import LatestNews from './mainElements/LatestNews.vue'
 import TestimonialsComp from './mainElements/TestimonialsComp.vue'
+import ContactUs from './mainElements/ContactUs.vue'
 
 export default{
     name: 'AppMain',
@@ -18,6 +19,7 @@ export default{
         StatsComp,
         LatestNews,
         TestimonialsComp,
+        ContactUs,
     },
 
     data() {
@@ -59,6 +61,10 @@ export default{
             <section id="video" class="d-flex align-items-center justify-content-center">
                 <i class="fas fa-play"></i>
             </section>
+
+            <ContactUs
+                :logos="store.contactUsLogos"
+            />
         
     </main>
 
