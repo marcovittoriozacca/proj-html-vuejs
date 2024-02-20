@@ -16,6 +16,9 @@ html{
         &::-webkit-scrollbar{
             display: none;
         }
+        &:hover{
+            cursor: default;
+        }
 }
 button{
     border: none;
@@ -24,4 +27,12 @@ button{
 
 h1,h2,h3,h4,h5,h6{
     font-family: $custom-font;
+}
+
+
+header,
+main,
+footer{
+    max-width: 2000px;
+    margin: 0 auto;
 }
