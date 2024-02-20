@@ -98,7 +98,7 @@ export default{
             :contact="contactMe"
         />
         <div class="orange-bar py-1 text-center">
-            <span>Copyright Everlead&copy;MikadoThemes</span>
+            <span class="text-white opacity-75 ">Copyright Everlead&copy;MikadoThemes</span>
         </div>
         <div class="position-absolute arrow">
             <ArrowUpBtn/>

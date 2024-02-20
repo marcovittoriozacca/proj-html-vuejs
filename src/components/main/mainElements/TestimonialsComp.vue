@@ -32,7 +32,7 @@ export default{
 
     <div class="testimonials">
 
-        <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true">
+        <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true" class="position-relative z-2">
             <Slide v-for="testimonial in testimonials" :key="testimonial" class="text-white">
                 <div class="d-flex flex-column testimonial-info row-gap-4">
                     <figure class="m-0">
@@ -76,8 +76,21 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use '../../../assets/sass/partials/variables' as *;
     .testimonials{
         background-color: #1f1c1cff;
+        &:after { 
+            content: 'Testimonials.';
+            font-size: 10rem;
+            font-family: $custom-font;
+            line-height: 1;
+            position: absolute; 
+            color: #171515ff; 
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); 
+            z-index: 1; 
+        }
         i{
             color: white;
         }

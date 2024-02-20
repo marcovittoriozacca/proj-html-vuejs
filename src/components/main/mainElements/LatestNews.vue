@@ -99,6 +99,11 @@ export default{
             transform: translateX(-50%);
             
         } 
+        h2{
+            span{
+                color:$orange
+            }
+        }
     }
 
     .icons{

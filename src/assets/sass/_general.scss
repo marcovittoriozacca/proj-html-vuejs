@@ -1,4 +1,7 @@
+@use './partials/variables' as *;
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 a{
     color: black;
@@ -7,6 +10,7 @@ a{
 body{
     background-color: #F9F9F9;
 }
+
 html{
         scrollbar-width: none;
         &::-webkit-scrollbar{
@@ -16,4 +20,8 @@ html{
 button{
     border: none;
     background-color: transparent;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $custom-font;
 }

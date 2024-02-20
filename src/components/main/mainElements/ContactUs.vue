@@ -109,6 +109,11 @@ export default {
     .contact-form{
         .form-header{
             @include orange-border;
+            h2{
+                span{
+                    color: $orange;
+                }
+            }
         }
         .form-body{
             input,

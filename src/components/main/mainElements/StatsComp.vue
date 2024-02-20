@@ -11,15 +11,15 @@ export default{
         <div class="container container-lg">
             <div class="row">
                 <div class="col-6">
-                    <h2 class="py-2">Creative Leader</h2>
+                    <h2 class="py-2">Creative Leader<span>.</span></h2>
                     <p class="text-secondary py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, id deleniti unde, alias totam explicabo repellendus velit quidem odit veritatis, cumque ratione. Quasi nisi sed itaque ipsum libero, voluptatibus ullam?</p>
                     <a class="text-uppercase text-decoration-none fw-bold" href="#">read more</a>
                 </div>
                 <div class="col-6">
                     <div v-for="(stat, index) in stats" :key="index" class="py-2">
                         <div class="d-flex justify-content-between pb-1">
-                            {{ stat.name }}
-                            <span>{{ stat.number }}%</span>
+                            <h5>{{ stat.name }}</h5>
+                            <h5>{{ stat.number }}%</h5>
                         </div>
                             <div class="outer-bar">
                                 <div :style="{ 'width' : stat.number + '%' }" class="inner-bar"></div>
@@ -41,6 +41,9 @@ export default{
 
     h2{
         @include orange-border;
+        span{
+            color: $orange;
+        }
     }
 
     .outer-bar{
