@@ -55,16 +55,40 @@ export default{
             <TestimonialsComp
                 :testimonials="store.testimonials"
             />
+
+            <section id="video" class="d-flex align-items-center justify-content-center">
+                <i class="fas fa-play"></i>
+            </section>
         
     </main>
 
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/sass/partials/mixins' as *;
     main{
         position: relative;
         z-index: 999;
         margin-top: -80px;
+
+        #video{
+            height: 80lvh;
+            background-image: url('/img/h1-img-04.jpg');
+            @include background-reset;
+            i{
+                color: white;
+                font-size: 5rem;
+                transition: .1s all linear;
+                &:hover{
+                    font-size: 5.3em;
+                    cursor: pointer;
+                    // box-shadow: 0 0 10px 5px black;
+                    filter: drop-shadow(0 0 10px black);
+                }
+            }
+        }
     }
+
+
 </style>
 

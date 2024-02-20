@@ -10,4 +10,10 @@
         width: 10%;
         background-color: $orange;
     }
+};
+
+@mixin background-reset{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
