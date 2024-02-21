@@ -70,11 +70,11 @@ export default{
     
                 <template #addons>
                     <!-- left  carousel arrow -->
-                    <svg @click="prev" class="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><title>Artboard-35</title><g id="Left-2" data-name="Left"><polygon points="24 12.001 2.914 12.001 8.208 6.706 7.501 5.999 1 12.501 7.5 19.001 8.207 18.294 2.914 13.001 24 13.001 24 12.001" style="fill:black"/></g></svg>
+                    <svg @click="prev" class="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><g id="Left-2" data-name="Left"><polygon points="24 12.001 2.914 12.001 8.208 6.706 7.501 5.999 1 12.501 7.5 19.001 8.207 18.294 2.914 13.001 24 13.001 24 12.001" style="fill:black"/></g></svg>
 
                     <!-- right carousel arrow -->
                     
-                    <svg @click="next" class="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><title>Artboard-34</title><g id="Right-2" data-name="Right"><polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" style="fill:black"/></g></svg>
+                    <svg @click="next" class="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><g id="Right-2" data-name="Right"><polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" style="fill:black"/></g></svg>
                 </template>
     
             </Carousel>
@@ -153,7 +153,10 @@ export default{
         margin: 0 auto;
     }
 
-    h3{
+    h3,
+    a{
         @include orange-hover;
     }
+
+    
 </style>

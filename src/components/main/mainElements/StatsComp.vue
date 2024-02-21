@@ -1,7 +1,7 @@
 <script>
 export default{
     name: 'StatsComp',
-    props:['stats']
+    props:['stats'],
 }
 </script>
 
@@ -47,8 +47,8 @@ export default{
     }
 
     .outer-bar{
-        
         border-bottom: .5px solid lightgray;
+        overflow: hidden;
         .inner-bar{
             background-color: $orange;
             height: 5px;
@@ -57,5 +57,7 @@ export default{
     .custom-padding{
         padding-block: 80px 130px;
     }
-
+    a{
+        @include orange-hover;
+    }
 </style>

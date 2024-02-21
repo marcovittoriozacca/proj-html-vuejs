@@ -74,6 +74,7 @@ export default{
 
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
+@use '../../../assets/sass/partials/mixins' as *;
     
     .events{
         background-image: url('/img/h1-img-09.jpg');
@@ -88,16 +89,13 @@ export default{
         }
     li{
         border-bottom: 1px solid #ECECEC;
-        &:hover h5{
-            color: $orange;
-            cursor: pointer;
-        }
-
+        
     }
     }
     h5{
         font-size: 1.5rem;
         font-weight: 600;
+        @include orange-hover;
     }
     h2{
         padding: 15px 300px 30px 40px;
@@ -118,10 +116,7 @@ export default{
         width: fit-content;
     }
     a{
-        cursor: pointer;
-        &:hover{
-            color:$orange;
-        }
+        @include orange-hover;
     }
     
 

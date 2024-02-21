@@ -49,7 +49,7 @@
         <div class="d-flex align-items-center container container-lg">
             <div class="position-relative">
 
-                <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true" class="carousel-size">
+                <Carousel ref="carousel" v-model="currentSlide" snapAlign="start" :wrapAround="true" :pauseAutoplayOnHover="true" :autoplay="7000" :transition="500" class="carousel-size">
                   <Slide v-for="slide in staff" :key="slide">
                     <div class="carousel__item">
                         <figure class="m-0">
@@ -127,6 +127,10 @@
                 width: 15px;
                 aspect-ratio: 1;
                 background-color: $orange;
+                transition: .2s all ease-out;
+                &:hover{
+                    transform: scale(120%);
+                }
             }
         }
     }

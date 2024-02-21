@@ -1,6 +1,6 @@
 <script>
 import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import { Carousel, Slide,  Navigation } from 'vue3-carousel';
 export default{
     name: 'CTA',
 
@@ -9,7 +9,6 @@ export default{
     components:{
         Carousel,
         Slide,
-        Pagination,
         Navigation,
     }
 
@@ -34,13 +33,13 @@ export default{
                     <!-- right arrows -->
                     <template #next>
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><title>Artboard-34</title><g id="Right-2" data-name="Right"><polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" style="fill:black"/></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><g id="Right-2" data-name="Right"><polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999" style="fill:black"/></g></svg>
                         </span>
                     </template>
                     <!-- left arrows -->
                     <template #prev>
                         <span>
-                            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><title>Artboard-35</title><g id="Left-2" data-name="Left"><polygon points="24 12.001 2.914 12.001 8.208 6.706 7.501 5.999 1 12.501 7.5 19.001 8.207 18.294 2.914 13.001 24 13.001 24 12.001" style="fill:black"/></g></svg>
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25"><g id="Left-2" data-name="Left"><polygon points="24 12.001 2.914 12.001 8.208 6.706 7.501 5.999 1 12.501 7.5 19.001 8.207 18.294 2.914 13.001 24 13.001 24 12.001" style="fill:black"/></g></svg>
                         </span>
                     </template>
                 </navigation>
@@ -48,7 +47,7 @@ export default{
                 <!-- our team element -->
                 <div id="our-team" class="d-flex flex-column align-items-start z-3">
                     <h1>Our Team<span>.</span></h1>
-                    <p class="py-3 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat amet, cum iusto eius nam eaque voluptatum</p>
+                    <p class="py-3 text-start text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat amet, cum iusto eius nam eaque voluptatum</p>
                     <div>
                         <a href="#" class="px-4 py-3 me-4 text-decoration-none text-uppercase bg-white">
                             <span>Read More</span>
@@ -90,7 +89,6 @@ export default{
         }
         p{
             max-width: 500px;
-            color:#1E1E1E4D;
         }
 
         a{
