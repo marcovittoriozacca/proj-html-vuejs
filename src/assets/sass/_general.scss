@@ -2,6 +2,11 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+@font-face {
+    font-family: 'cheguevara-sign';
+    src: url('/public/cheguevara-sign/CheGuevaraSign-Regular.ttf') format('truetype');;
+}
+
 
 a{
     color: black;
@@ -33,4 +38,7 @@ h1,h2,h3,h4,h5,h6{
 header{
     max-width: 2000px;
     margin: 0 auto;
+}
+.signature{
+    font-family: 'cheguevara-sign'!important;
 }

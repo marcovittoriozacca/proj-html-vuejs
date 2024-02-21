@@ -75,7 +75,6 @@ export default{
 .custom-heigth{
     height: 700px;
 
-    
 }
     #our-team{
         position: absolute;
@@ -119,4 +118,72 @@ export default{
 
 
     }
+
+    @media screen and (max-width: 1240px) {
+        .custom-heigth{
+            height: 500px;
+        }
+
+
+        #our-team{
+            top: 30%;
+            left: 10%
+        }
+    }
+    @media screen and (max-width: 890px) {
+        
+        figure{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+
+        #our-team{
+            top: 30%;
+            left: 10%;
+
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                max-width: 400px;
+            }
+
+            a{
+                span{
+                    padding-right: 10px;
+                    font-weight: 500;
+                }
+                i{
+                    border-left: 2px solid black;
+                    padding: 3px;
+                }
+                &:hover i{
+                    border-left: 2px solid white;
+                }
+            }
+        }
+
+
+
+      
+
+
+        .btn-orange{
+            background-color: $orange;            
+            i{
+                border-left: 2px solid white;
+
+            }
+            &:hover i{
+                border-left: 2px solid $orange;
+            }
+
+        }
+
+
+    
+    }
+
 </style>

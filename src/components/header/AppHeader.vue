@@ -35,7 +35,7 @@ export default {
                 },
                 {
                     name: 'events',
-                    url: '#events',
+                    url: '#upcoming-events',
                     active: false,
                 },
                 {

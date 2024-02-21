@@ -77,13 +77,17 @@
                         <h5 class="text-secondary">{{ staff[currentSlide].role }}</h5>
                     </div>
                     <p class="text-secondary pt-3">{{ staff[currentSlide].description }}</p>
-                    <ul class="list-unstyled socials d-flex column-gap-3">
-                        <li v-for="(social, index) in socials" :key="index">
-                            <a :href="social.url" class="text-white rounded-circle p-1 px-3 d-flex justify-content-center align-items-center text-decoration-none ">
-                                <i :class="social.icon"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <ul class="list-unstyled socials d-flex column-gap-3">
+                            <li v-for="(social, index) in socials" :key="index">
+                                <a :href="social.url" class="text-white rounded-circle p-1 px-3 d-flex justify-content-center align-items-center text-decoration-none ">
+                                    <i :class="social.icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <span class="signature">{{ staff[currentSlide].name }}</span>
+                    </div>
                 </div>
                 <img v-if="staff[currentSlide].signature" :src="`/img/${staff[currentSlide].signature}`" :alt="staff[currentSlide].name">
             </div>
@@ -97,6 +101,14 @@
 <style lang="scss" scoped>
 @use '../../../assets/sass/partials/variables' as *;
 @use '../../../assets/sass/partials/mixins' as *;
+.signature{
+    flex-grow: 1;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 3.5rem;
+    rotate: -10deg;
+    color: $orange;
+}
   .staff{
     margin-top: 30px;
     padding-top: 100px;
