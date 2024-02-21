@@ -17,3 +17,18 @@
     background-position: center;
     background-size: cover;
 }
+
+@mixin orange-hover{
+    transition: .2s color ease-out;
+    &:hover{
+        color: $orange;
+        cursor: pointer;
+    }
+}
+@mixin white-hover{
+    transition: .2s color ease-out;
+    &:hover{
+        color: white;
+        cursor: pointer;
+    }
+}

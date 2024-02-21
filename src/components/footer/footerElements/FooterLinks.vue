@@ -16,11 +16,11 @@ export default{
                     <ul class="list-unstyled">
                         <li v-for="(element, index) in about" :key="index">
                             <h4 class="text-capitalize text-white">{{ element.title }}</h4>
-                            <p class="text-secondary py-3">{{ element.description }}</p>
+                            <p class="white-hover py-3">{{ element.description }}</p>
 
                             <div class="d-flex align-content-center column-gap-3">
                                 <div v-for="(social, index) in element.socials" :key="index" >
-                                    <a :href="social.url" class="rounded-circle p-1 px-3 d-flex justify-content-center align-items-center text-decoration-none socials">
+                                    <a :href="social.url" :class="social.name" class="rounded-circle p-1 px-3 d-flex justify-content-center align-items-center text-decoration-none socials">
                                         <i :class="social.icon"></i>
                                     </a>
                                 </div>
@@ -37,7 +37,7 @@ export default{
                         </li>
                         <li v-for="(element, index) in twitter" :key="index" class="d-flex align-items-start">
                             <i class="fab fa-twitter twitter-icon pt-2 me-2"></i>
-                            <p class="text-secondary">
+                            <p class="white-hover">
                                 <span class="text-decoration-underline">
                                     {{ element.tag }}
                                 </span>
@@ -54,7 +54,7 @@ export default{
                             <h4 class="text-capitalize text-white">Important Links</h4>
                         </li>
                         <li v-for="(element, index) in links" :key="index">
-                            <a :href="element.url" class="text-secondary">
+                            <a :href="element.url" class="white-hover">
                                 {{ element.name }}
                             </a>
                         </li>
@@ -69,7 +69,7 @@ export default{
                         <li v-for="(element, index) in contact" :key="index">
                             <a href="#">
                                 <i :class="element.icon" class="contact-icons me-3"></i>
-                                <span class="text-secondary">
+                                <span class="white-hover">
                                     {{ element.description }}
                                 </span>
                             </a>
@@ -104,10 +104,27 @@ section{
         }
     }
     
+    .linkedin, .facebook{
+        &:hover{
+            background-color: #0d62bdff;
+            color: white;
+        }
+    }
+    .twitter{
+        &:hover{
+            background-color: #1a95e8ff;
+            color: white;
+        }
+    }
     .socials{
         width: 15px;
         aspect-ratio: 1;
         background-color: white;
+        transition: .2s all ease-out;
+        &:hover{
+            transform: scale(120%);
+        }
+
     }
     .contact-icons,
     .twitter-icon{
@@ -135,10 +152,10 @@ section{
                 color: gray;
             }
         }
-        .twitter-icon{
-            color: $orange;
-            
-        }
     }
+    .white-hover{
+        color:#6b757dff;
+            @include white-hover;
+        }
 
 </style>
